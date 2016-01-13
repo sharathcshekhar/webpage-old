@@ -1,0 +1,213 @@
+@import "font-awesome"
+
+html
+  font-size: 100%
+body
+  margin: 0
+  padding: 0
+  font-size: 1.2rem
+  line-height: 2rem
+h1
+  line-height: 2.8rem
+  margin-top: 15px
+  margin-bottom: 15px
+
+$main_bg: #fff
+$sidebar_width: 10em
+
+$gray_border: rgb(72, 94, 72)
+$content_width: 65rem
+$headline_font: 'Goudy Bookletter 1911'
+
+$body_font: 'Habibi', arial, serif
+
+$title_color: rgb(90, 38, 38)
+$scrollpage_dark: #242122
+$bg_dark: #1f1f1f
+$dark_bg:  #303030
+$box_border: #A64B00
+
+$header_text: #686868
+$text: #000
+
+
+$link_color:         #A64B00
+$link_color_hover:   #BF7130
+
+// Basic styles
+a
+  color: $link_color
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+    color: $link_color_hover
+
+body
+  font-family: $body_font
+  color: $text
+
+.line-numbers
+  padding-right: 1rem
+
+pre, code, tt, kdb, samp
+  font-family: 'Droid Sans Mono', monospace, courier
+  overflow: auto
+  font-size: 14px
+  overflow: auto
+  border: 1px solid $box_border
+  padding: 1px
+
+pre
+  padding-right: 5px
+  padding-left: 5px
+  border: 1px solid $box_border
+  border-left: 1rem solid $box_border
+
+h1, h2, h3, h4, h5, h6
+  font-family: $headline_font
+  font-weight: 100
+  a
+    color: $header_text
+    text-decoration: none
+
+header
+  a
+    padding-right: .5em
+    padding-left: .5em
+    color: $header_text
+    &:hover
+      color: $bg_dark
+
+  hgroup
+    text-align: center
+    h1.title
+      font-size: 4.5rem
+      line-height: 5.5rem
+      margin-bottom: 0
+      color: $title_color
+
+div.container
+  min-height: 5em
+  margin-left: auto
+  margin-right: auto
+
+$footer-border-color: rgb(228, 228, 228)
+
+div.footer
+  border-top: 2rem solid rgb(228, 228, 228)
+  background: #000
+  text-align: center
+  color: rgb(134, 134, 134)
+  font-size: 1rem
+  line-height: 1.5rem
+  .header
+    font-size: 1.3rem
+    color: rgb(228, 228, 228)
+    padding: 0
+    margin: 1
+  
+@media all and (min-width: 800px)
+  div.landing
+    width: 80%
+    max-width: 65rem
+    margin-top: 4em
+    margin-left: auto
+    margin-right: auto
+    color: #b6b6b6
+    h2.tag
+      font-size: 2.5em
+      text-align: center
+      margin-bottom: 1.5
+      padding-bottom: 0
+    h1.name
+      color: $gray_border
+      margin-top: .1em
+      font-size: 6em
+      line-height: 1em
+      text-align: center
+      margin-bottom: 0 
+    ul
+      list-style-type: none
+      padding-top: 1.5rem
+      li
+        width: 31%
+        float: left
+        border-left: 10px solid $header_text
+        padding-top: .7em
+        font-size: 1.7em
+        height: 1.5em
+        margin-bottom: 3em
+        text-align: center
+        h1.action
+          height: 1em
+          padding: 0
+          margin: 0
+          margin-left: auto
+          margin-right: auto
+          opacity: .7
+          &:after
+            position: relative
+            margin-top: .7em
+            font-size: 3rem
+            display: none
+
+section.scrollpage
+  position: relative
+  width: 100%
+  overflow: hidden
+  h1.section
+    font-variant: small-caps
+    text-align: center
+    font-size: 7em
+    line-height: 7rem
+  div.wrapper
+    padding-right: 10%
+    padding-left: 10%
+    padding-bottom: 3em
+
+section#aboutme
+  background: #000
+  color: rgb(134, 134, 134)
+  h1.section
+    color: #ffffff
+  a
+    color: #fff
+    text-decoration: italic
+    &:hover
+      text-decoration: underline
+      color: $scrollpage_dark
+  div.wrap
+    padding: 1rem
+  div.main
+    padding-left: 8%
+    padding-right: 10%
+    text-align: justify
+    img#pic
+      float: right
+      padding-left: 5%
+  div.links
+    float: center
+    text-align: center
+    padding-top: 1rem
+    clear: both
+    letter-spacing: 10px
+    font-size: 1.5em
+
+section#school
+  background: #ffffff
+  color: rgb(134, 134, 134)
+  h1.section
+    color: #000
+
+section#projects
+  background: #000
+  color: rgb(134, 134, 134)
+  h1.section
+    color: #ffffff
+
+section#work
+  background: #FFFFFF
+  color: rgb(134, 134, 134)
+  h1.section
+    color: #000
+
